@@ -49,7 +49,7 @@ class Game
 
   def turn
     if !@board.valid_move?(self.current_player.move(@board))
-      self.turn
+      self.current_player.move(@board)
     end
 
   end
