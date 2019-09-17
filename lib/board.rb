@@ -19,7 +19,7 @@ class Board
   end
 
   def position(input)
-    return @cells[input.to_i-1]
+    @cells[input.to_i-1]
   end
 
   def full?
