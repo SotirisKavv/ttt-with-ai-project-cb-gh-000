@@ -14,6 +14,14 @@ class Game
     @player_2 = p2
   end
 
+  def current_player
+    if self.board.turn_count % 2 == 1
+      @player_1
+    else
+      @player_2
+    end
+  end
+
 
 
 end
