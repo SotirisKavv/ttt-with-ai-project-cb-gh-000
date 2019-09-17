@@ -48,7 +48,7 @@ class Game
   end
 
   def turn
-    while !@board.valid_move?(self.current_player.move(@board))
+    if !@board.valid_move?(self.current_player.move(@board))
       self.turn
     end
 
