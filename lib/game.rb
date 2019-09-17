@@ -22,6 +22,15 @@ class Game
     end
   end
 
-
+  def won?
+    WIN_COMBINATIONS.each do |combination|
+      if @board.cells[combination[0]] == "X" && @board.cells[combination[1]] == "X" && @board.cells[combination[2]] == "X"
+        return combination
+      elsif @board.cells[combination[0]] == "O" && @board.cells[combination[1]] == "O" && @board.cells[combination[2]] == "O"
+        return combination      
+      end
+    end
+    nil    
+  end
 
 end
