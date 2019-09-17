@@ -37,11 +37,11 @@ class Board
   end
 
   def valid_move?(input)
-    input.to_i >= 1 && input.to_i <= 9
+    input.to_i >= 1 && input.to_i <= 9 && !self.taken?(input)
   end
 
   def update(index, token)
-    if self.valid_move?(index) && !taken?(index)
+    if self.valid_move?(index)
       @cells[index.to_i-1] = token
     end
   end
