@@ -8,10 +8,12 @@ class Game
     [0, 4, 8], [2, 4, 6]
   ]
 
-  def initialize(p1, p2, board)
+  def initialize(p1 = Players::Human.new("X"), p2 = Players::Human.new("O"), board = Board.new)
     @board = board
     @player_1 = p1
     @player_2 = p2
   end
+
+  
 
 end
