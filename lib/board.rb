@@ -19,7 +19,13 @@ class Board
   end
 
   def position(input)
-    @cells[input.to_i - 1]
+    if @cells[input.to_i - 1] == "X"
+      "X"
+    elsif @cells[input.to_i - 1] == "O"
+      "O"
+    else
+      " "
+    end
   end
 
   def full?
