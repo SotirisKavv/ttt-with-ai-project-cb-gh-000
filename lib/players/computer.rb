@@ -1,9 +1,5 @@
 class Players
-  class Computer
-
-    def initialize(token)
-      super
-    end
+  class Computer < Player
 
     def move(board)
        move = nil
