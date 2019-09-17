@@ -31,4 +31,11 @@ class Board
     @cells.each {|cell| turn += 1 if cell == "X" || cell == "O"}
   end
 
+  def taken?(index)
+    !@cells[index] == " "
+  end
+
+  def valid_move?(input)
+    input >= 1 && input <= 9
+  end
 end
