@@ -51,7 +51,7 @@ class Game
     if !@board.valid_move?(self.current_player.move(@board))
       self.current_player.move(@board)
     end
-    
+
   end
 
 end
