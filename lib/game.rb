@@ -67,7 +67,7 @@ class Game
     while !over?
       turn
     end
-    if won? != nil
+    if won?
       puts "Congratulations #{winner}!"
     elsif draw?
       puts "Cat's Game!"
