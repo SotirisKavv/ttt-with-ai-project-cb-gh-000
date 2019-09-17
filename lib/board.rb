@@ -19,13 +19,7 @@ class Board
   end
 
   def position(input)
-    if @cells[input.to_i - 1] == "X"
-      "X"
-    elsif @cells[input.to_i - 1] == "O"
-      "O"
-    else
-      " "
-    end
+    self.cells[input.to_i - 1]
   end
 
   def full?
@@ -46,9 +40,9 @@ class Board
     input.to_i >= 1 && input.to_i <= 9 && !self.taken?(input)
   end
 
-  def update(index, token)
+  def update(index, player)
     if self.valid_move?(index)
-      @cells[index.to_i-1] = token
+      @cells[index.to_i-1] = player[token]
     end
   end
 end
