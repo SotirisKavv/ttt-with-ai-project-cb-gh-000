@@ -33,4 +33,8 @@ class Game
     nil
   end
 
+  def draw?
+    @board.full? && self.won? == nil
+  end
+
 end
