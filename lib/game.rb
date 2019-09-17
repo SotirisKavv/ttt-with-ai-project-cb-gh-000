@@ -14,6 +14,6 @@ class Game
     @player_2 = p2
   end
 
-  
+
 
 end
