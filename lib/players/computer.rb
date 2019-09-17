@@ -1,6 +1,10 @@
 class Players
   class Computer
 
+    def initialize(token)
+      super
+    end
+
     def move(board)
        move = nil
 
