@@ -29,6 +29,7 @@ class Board
   def turn_count
     turn = 0
     @cells.each {|cell| turn += 1 if cell == "X" || cell == "O"}
+    turn
   end
 
   def taken?(index)
