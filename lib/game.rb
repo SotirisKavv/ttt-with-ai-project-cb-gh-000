@@ -48,7 +48,7 @@ class Game
   end
 
   def turn
-    input = ""
+    input = "0"
     while @board.valid_move?(input)
         input = gets.strip
     end
