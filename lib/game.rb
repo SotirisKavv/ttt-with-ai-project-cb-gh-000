@@ -41,4 +41,10 @@ class Game
     self.draw? || self.won? != nil
   end
 
+  def winner
+    if self.won? != nil
+      @board.cells[self.won?[0]]
+    end
+  end
+
 end
