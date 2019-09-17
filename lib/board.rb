@@ -5,5 +5,5 @@ class Board
   def initialize
     @cells = Array.new(9, " ")
   end
-  
+
 end
