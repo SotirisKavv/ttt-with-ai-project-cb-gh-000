@@ -41,7 +41,7 @@ class Board
 
   def update(index, token)
     if self.valid_move?(index) && !taken?(index)
-      self.position(index) = token
+      @cells[index-1] = token
     end
   end
 end
