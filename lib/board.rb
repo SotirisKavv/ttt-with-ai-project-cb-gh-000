@@ -26,4 +26,9 @@ class Board
     !@cells.include?(" ")
   end
 
+  def turn_count
+    turn = 0
+    @cells.each {|cell| turn += 1 if cell == "X" || cell == "O"}
+  end
+
 end
