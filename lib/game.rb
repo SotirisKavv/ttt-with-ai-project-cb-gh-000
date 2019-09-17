@@ -51,6 +51,7 @@ class Game
     player = current_player
     current_move = player.move(@board)
     if !@board.valid_move?(current_move)
+      puts "Your move was invalid!"
       turn
     else
       puts "Turn: #{@board.turn_count+1}\n"
