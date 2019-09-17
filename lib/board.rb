@@ -42,7 +42,7 @@ class Board
 
   def update(index, player)
     if self.valid_move?(index)
-      @cells[index.to_i-1] = player[token]
+      @cells[index.to_i-1] = player.token
     end
   end
 end
