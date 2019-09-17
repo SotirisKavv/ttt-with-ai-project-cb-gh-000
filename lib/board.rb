@@ -33,7 +33,7 @@ class Board
   end
 
   def taken?(index)
-    !self.position(index.to_i) == " "
+    self.position(index.to_i) == "X" || self.position(index.to_i) == "O"
   end
 
   def valid_move?(input)
