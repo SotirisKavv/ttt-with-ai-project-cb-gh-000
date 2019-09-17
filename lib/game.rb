@@ -48,11 +48,16 @@ class Game
   end
 
   def turn
-    input = "0"
-    while @board.valid_move?(input)
+    ret = ""
+    while ret == "invalid"
         input = gets.strip
+        if @board.valid_move?(input)
+          ret = input
+        else
+          ret = "invalid"
+        end
     end
-
+    ret
   end
 
 end
