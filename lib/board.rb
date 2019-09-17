@@ -18,8 +18,8 @@ class Board
     puts " #{@cells[6]} |  #{@cells[7]} |  #{@cells[8]} "
   end
 
-  def position(input, token)
-    @cells[input-1] = token
+  def position(input)
+    @cells[input-1]
   end
 
   def full?
@@ -32,10 +32,14 @@ class Board
   end
 
   def taken?(index)
-    !@cells[index] == " "
+    !self.position(index) == " "
   end
 
   def valid_move?(input)
     input >= 1 && input <= 9
+  end
+
+  def update
+    
   end
 end
