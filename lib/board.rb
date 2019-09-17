@@ -22,4 +22,8 @@ class Board
     @cells[input-1] = token
   end
 
+  def full?
+    !@cells.include?(" ")
+  end
+
 end
