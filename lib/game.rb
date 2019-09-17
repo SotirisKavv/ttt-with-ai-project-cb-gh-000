@@ -13,5 +13,5 @@ class Game
     @player_1 = p1
     @player_2 = p2
   end
-  
+
 end
