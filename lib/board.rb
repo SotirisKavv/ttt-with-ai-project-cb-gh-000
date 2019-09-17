@@ -39,7 +39,9 @@ class Board
     input >= 1 && input <= 9
   end
 
-  def update
-
+  def update(index, token)
+    if self.valid_move?(index) && !taken?(index)
+      self.position(index) = token
+    end
   end
 end
