@@ -37,4 +37,8 @@ class Game
     @board.full? && self.won? == nil
   end
 
+  def over?
+    self.draw? || self.won? != nil
+  end
+
 end
