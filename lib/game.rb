@@ -57,7 +57,7 @@ class Game
         ret = "invalid"
       end
     end
-    
+
   end
 
 end
