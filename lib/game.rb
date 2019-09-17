@@ -48,14 +48,7 @@ class Game
   end
 
   def turn
-    ret = ""
-    input = gets.strip
-    if @board.valid_move?(input)
-      ret = input
-    else
-      ret = "invalid"
-    end
-    ret
+    self.current_player.move
   end
 
 end
